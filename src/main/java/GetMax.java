@@ -28,13 +28,18 @@ public class GetMax {
                 // assign value to 'bigNum'
                 bigNum = arr[itr];
             }
+            /* originally thought this would shorten the process but neglected that despite the very next number might be less than the current iteration
+             * there may be a possibilty of a higher number later down the road as this given array is unsorted */
             // if on the contrary ...
-            else{
-                // return largest int in 'arr'
-                return bigNum;
-            }
+            // else{
+            //     // return largest int in 'arr'
+            //     return bigNum;
+            // }
+
             // increment by 1 to continue iteration
             ++itr;
         }
+        // return largest int in 'arr'
+        return bigNum;
     }
 }
