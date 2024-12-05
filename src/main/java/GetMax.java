@@ -28,10 +28,13 @@ public class GetMax {
                 // assign value to 'bigNum'
                 bigNum = arr[itr];
             }
+            // if on the contrary ...
+            else{
+                // return largest int in 'arr'
+                return bigNum;
+            }
             // increment by 1 to continue iteration
             ++itr;
         }
-        /
-        return bigNum;
     }
 }
